@@ -31,3 +31,9 @@ I have used the deno runtime to execute javascript on windows.
 ### Zig
 
 zig release 2023-12-01
+
+## Run
+
+Run the executable from within that day's /data folder.
+
+Alternatively, run run.bat, passing the language and day. Ex: run rust 1 

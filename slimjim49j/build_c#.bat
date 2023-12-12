@@ -1,6 +1,19 @@
+@REM build all c# files:
+@REM build_c#
+@REM build one day:
+@REM build_c# 3
+
 @echo off
 
-for /L %%A in (1,1,25) do (
+if "%~1"=="" (
+    set "start=1"
+    set "end=25"
+) else (
+    set "start=%1"
+    set "end=%1"
+)
+
+for /L %%A in (%start%,1,%end%) do (
     pushd "day_%%A/c#"
     if exist "day_%%A.cs" (
         if not exist "build" (
